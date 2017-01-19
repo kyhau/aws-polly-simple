@@ -1,16 +1,14 @@
 #!/bin/bash
 
 # Require
-# AWS_ACCESS_KEY_ID
-# AWS_SECRET_ACCESS_KEY
-# S3_BUCKET
+#export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+#export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+#export S3_BUCKET=${S3_BUCKET}
 MESSAGE="Testing one, two, three"
 VOICE="Nicole"
 HTML_REFRESH_INTERVAL="30"
 MESSAGE_LIFETIME="30"
 
-export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
-export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
 export AWS_DEFAULT_REGION=us-east-2
 
 echo "################################################################################"
