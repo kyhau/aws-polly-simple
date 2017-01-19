@@ -1,0 +1,4 @@
+language: bash
+
+script:
+    - bash deployToS3.sh
