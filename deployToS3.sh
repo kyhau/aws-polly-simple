@@ -6,8 +6,7 @@
 #export S3_BUCKET=${S3_BUCKET}
 MESSAGE="Testing one, two, three"
 VOICE="Nicole"
-HTML_REFRESH_INTERVAL="30"
-MESSAGE_LIFETIME="30"
+HTML_REFRESH_INTERVAL="60"
 
 export AWS_DEFAULT_REGION=us-east-2
 
@@ -30,21 +29,3 @@ cat >index.html <<EOL
 EOL
 
 aws s3 sync . s3://${S3_BUCKET}/ --acl public-read --exclude "*" --include "index.html" --include "target.mp3"
-
-echo "################################################################################"
-echo "Sleeping for ${MESSAGE_LIFETIME} seconds before removing the voice message..."
-
-sleep ${MESSAGE_LIFETIME}
-
-echo "################################################################################"
-echo "Removing the voice message from the s3 static website page ..."
-
-cat >index.html <<EOL
-<!DOCTYPE html>
-<html>
-<head><meta http-equiv="refresh" content="${HTML_REFRESH_INTERVAL}"></head>
-<body><p>Refresh interval: ${HTML_REFRESH_INTERVAL} seconds</p></body>
-</html>
-EOL
-
-aws s3 sync . s3://${S3_BUCKET}/ --acl public-read --exclude "*" --include "index.html"
