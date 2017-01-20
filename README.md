@@ -1,5 +1,5 @@
 # Amazon Polly example
-Simple example demonstrating how [Amazon Polly](https://aws.amazon.com/blogs/aws/polly-text-to-speech-in-47-voices-and-24-languages/) works.
+Simple example demonstrating how [Amazon Polly](https://aws.amazon.com/polly/details/) works.
 
 ## Build
 [![Build Status](https://travis-ci.org/kyhau/aws-polly-simple.svg?branch=master)](https://travis-ci.org/kyhau/aws-polly-simple)
