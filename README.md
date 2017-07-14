@@ -6,9 +6,11 @@ Simple example demonstrating how [Amazon Polly](https://aws.amazon.com/polly/det
 
 ## Create audio file and deploy to S3 static website
 
-### Install awscli
+### Set up AWS resources
 
-See [Install awscli](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
+1. Create CloudFormation stack with `Polly-GroupAndPolicy-StaticWebsite.template`.
+1. Create IAM User with Access Key and add the User to the Group created in previous step.
+1. Install [awscli](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
 
 ### Set up environment
 
