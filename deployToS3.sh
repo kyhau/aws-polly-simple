@@ -13,7 +13,7 @@ export AWS_DEFAULT_REGION=ap-southeast-2
 echo "################################################################################"
 echo "Creating audio file for the message ..."
 
-aws polly synthesize-speech --output-format mp3 --voice-id ${VOICE} --text "${MESSAGE}" target.mp3 --region us-east-2
+aws polly synthesize-speech --output-format mp3 --voice-id ${VOICE} --text "${MESSAGE}" target.mp3 --region ${AWS_DEFAULT_REGION}
 
 echo "################################################################################"
 echo "Adding the voice message from the s3 static website page ..."
