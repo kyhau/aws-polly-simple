@@ -8,7 +8,7 @@ MESSAGE="Testing one, two, three"
 VOICE="Nicole"
 HTML_REFRESH_INTERVAL="60"
 
-export AWS_DEFAULT_REGION=us-east-2
+export AWS_DEFAULT_REGION=ap-southeast-2
 
 echo "################################################################################"
 echo "Creating audio file for the message ..."
