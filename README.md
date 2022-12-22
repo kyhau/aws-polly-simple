@@ -8,7 +8,7 @@ Simple example demonstrating how [Amazon Polly](https://aws.amazon.com/polly/det
 
 ### Set up AWS resources
 
-1. Create CloudFormation stack with `Polly-GroupAndPolicy-StaticWebsite.template`.
+1. Create CloudFormation stack with [Polly-GroupAndPolicy-StaticWebsite.yaml](cfn/Polly-GroupAndPolicy-StaticWebsite.yaml).
 1. Create IAM User with Access Key and add the User to the Group created in previous step.
 1. Install [awscli](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
 
@@ -25,8 +25,8 @@ $ export S3_BUCKET=[secure]
 $ ./deployToS3.sh
 ```
 
-## S3 static website url: 
+## S3 static website url:
 
-Open this url in a new tab of the Chrome browser.
+Open this url in browser.
 
 http://your_bucket.s3-website-ap-southeast-2.amazonaws.com
